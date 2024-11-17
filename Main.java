@@ -18,7 +18,7 @@ public class Main {
       } else if (choice.equals("2")) {
         listItems(products);
       } else if (choice.equals("3")) {
-        deleteItem();
+        deleteItem(sc, products);
       } else if (choice.equals("4")) {
         updateItem();
       } else if (choice.equals("x")) {
@@ -73,14 +73,20 @@ public class Main {
 
   public static void listItems(ArrayList<Item>products){
     System.out.println();
-    for (Item product:products){
-      System.out.println(product);
+    for (int i=0; i<products.size(); i++){
+      System.out.println(i + ") ");
+      System.out.println(products.get(i));
       System.out.println();
     }
   }
 
-  public static void deleteItem(){
-    
+  public static void deleteItem(Scanner sc, ArrayList<Item>products){
+    System.out.println("Provide item no.");
+    int itemNum=Integer.valueOf(sc.nextLine());
+
+    if (itemNum>=0 || itemNum<products.size()) {
+      products.remove(itemNum);
+    }
   }
 
   public static void updateItem(){

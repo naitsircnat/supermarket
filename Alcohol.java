@@ -11,7 +11,7 @@ public class Alcohol extends Drink implements CheckAge {
     this.alcoholPercent=alcoholPercent;
   }
 
-  public boolean allowedToDrink(int age){
+  public boolean allowedToBuy(int age){
     return age>=18;
   }
 

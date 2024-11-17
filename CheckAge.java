@@ -1,3 +1,3 @@
 public interface CheckAge {
-  boolean allowedToDrink(int age);
+  boolean allowedToBuy(int age);
 }
