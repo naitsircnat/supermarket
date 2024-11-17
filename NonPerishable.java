@@ -11,7 +11,7 @@ public class NonPerishable extends Item {
     this.brand = brand;
     this.origin = origin;
     this.price = price;
-    this.dimensions="";
+    this.dimensions=dimensions;
   }
 
   public String getDimensions() {
@@ -24,7 +24,6 @@ public class NonPerishable extends Item {
 
   @Override
   public String toString() {
-    return "Homeware [name=" + name + ", dimensions=" + dimensions + ", brand=" + brand + ", origin=" + origin
-        + ", price=" + price + "]";
+    return "Name: " + name + "\nBrand: " + brand + "\nOrigin:" + origin + "\nPrice: " + price + "\nDimensions: " + dimensions; 
   }
 }

@@ -14,4 +14,8 @@ public class Alcohol extends Drink implements CheckAge {
   public boolean allowedToDrink(int age){
     return age>=18;
   }
+
+  public String toString() {
+    return "Name: " + name + "\nBrand: " + brand + "\nOrigin:" + origin + "\nPrice: " + price + "\nExpiry: " + expiry + "\nHalal?: " + isHalal + "\nStorage: " + storageInstructions + "\nVolume(ml): " + vol + "\nAlcohol %: " + alcoholPercent; 
+  }
 }

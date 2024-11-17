@@ -21,8 +21,6 @@ public class Drink extends Perishable {
 
   @Override
   public String toString() {
-    return "Drink [name=" + name + ", vol=" + vol + ", expiry=" + expiry + ", brand=" + brand + ", isHalal=" + isHalal
-        + ", origin=" + origin + ", storageInstructions=" + storageInstructions + ", price=" + price + ", isHalal()="
-        + isHalal() + "]";
+    return "Name: " + name + "\nBrand: " + brand + "\nOrigin:" + origin + "\nPrice: " + price + "\nExpiry: " + expiry + "\nHalal?: " + isHalal + "\nStorage: " + storageInstructions + "\nVolume(ml): " + vol; 
   }
 }

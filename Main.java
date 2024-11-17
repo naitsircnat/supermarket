@@ -28,6 +28,7 @@ public class Main {
   }
 
   public static void showMenu(){
+    System.out.println();
     System.out.println("Select an option:");
     System.out.println("1. Create item");
     System.out.println("2. List items");
@@ -71,8 +72,10 @@ public class Main {
   }
 
   public static void listItems(ArrayList<Item>products){
+    System.out.println();
     for (Item product:products){
       System.out.println(product);
+      System.out.println();
     }
   }
 
@@ -124,10 +127,11 @@ public class Main {
     System.out.println("Halal?");
     String isHalal=sc.nextLine();
 
-    System.out.println("Storage Instructions?");
+    System.out.println("Storage instructions?");
     String storageInstructions=sc.nextLine();
 
-    int weight=Integer.valueOf(sc.nextLine());
+    System.out.println("Weight(kg)?");
+    double weight=Double.valueOf(sc.nextLine());
 
     Food food=new Food(name, brand, origin, price, expiry, isHalal, storageInstructions, weight);
 
@@ -153,10 +157,10 @@ public class Main {
     System.out.println("Halal?");
     String isHalal=sc.nextLine();
 
-    System.out.println("Storage Instructions?");
+    System.out.println("Storage instructions?");
     String storageInstructions=sc.nextLine();
 
-    System.out.println("Volume?");
+    System.out.println("Volume(ml)?");
     int vol=Integer.valueOf(sc.nextLine());
 
     Drink drink=new Drink(name, brand, origin, price, expiry, isHalal, storageInstructions, vol);
@@ -183,21 +187,19 @@ public class Main {
     System.out.println("Halal?");
     String isHalal=sc.nextLine();
 
-    System.out.println("Storage Instructions?");
+    System.out.println("Storage instructions?");
     String storageInstructions=sc.nextLine();
 
-    System.out.println("Volume?");
+    System.out.println("Volume(ml)?");
     int vol=Integer.valueOf(sc.nextLine());
 
     System.out.println("Alcohol percentage?");
-    int alcoholPercent=Integer.valueOf(sc.nextLine());
+    double alcoholPercent=Double.valueOf(sc.nextLine());
 
     Alcohol alcohol=new Alcohol(name, brand, origin, price, expiry, isHalal, storageInstructions, vol, alcoholPercent);
 
     products.add(alcohol);
   }
-
-  
 
 }
 
