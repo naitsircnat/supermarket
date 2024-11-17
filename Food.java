@@ -21,6 +21,6 @@ public class Food extends Perishable {
 
   @Override
   public String toString() {
-    return "Name: " + name + "\nBrand: " + brand + "\nOrigin:" + origin + "\nPrice: " + price + "\nExpiry: " + expiry + "\nHalal?: " + isHalal + "\nStorage: " + storageInstructions + "\nWeight(Kg): " + weight; 
+    return "Name: " + name + "\nBrand: " + brand + "\nOrigin:" + origin + "\nPrice($): " + price + "\nExpiry: " + expiry + "\nHalal?: " + isHalal + "\nStorage: " + storageInstructions + "\nWeight(Kg): " + weight; 
   }
 }

@@ -15,7 +15,15 @@ public class Alcohol extends Drink implements CheckAge {
     return age>=18;
   }
 
+  public double getAlcoholPercent() {
+    return alcoholPercent;
+  }
+
+  public void setAlcoholPercent(double alcoholPercent) {
+    this.alcoholPercent = alcoholPercent;
+  }
+
   public String toString() {
-    return "Name: " + name + "\nBrand: " + brand + "\nOrigin:" + origin + "\nPrice: " + price + "\nExpiry: " + expiry + "\nHalal?: " + isHalal + "\nStorage: " + storageInstructions + "\nVolume(ml): " + vol + "\nAlcohol %: " + alcoholPercent; 
+    return "Name: " + name + "\nBrand: " + brand + "\nOrigin:" + origin + "\nPrice($): " + price + "\nExpiry: " + expiry + "\nHalal?: " + isHalal + "\nStorage: " + storageInstructions + "\nVolume(ml): " + vol + "\nAlcohol %: " + alcoholPercent; 
   }
 }
