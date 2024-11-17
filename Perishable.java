@@ -1,4 +1,4 @@
-public class Perishable extends Item {
+public abstract class Perishable extends Item {
   protected String expiry;
   protected String isHalal;
   protected String storageInstructions;
@@ -43,10 +43,6 @@ public class Perishable extends Item {
 
   @Override
   public String toString() {
-    return "Perishable [name=" + name + ", expiry=" + expiry + ", brand=" + brand + ", isHalal=" + isHalal + ", origin="
-        + origin + ", storageInstructions=" + storageInstructions + ", price=" + price + ", isHalal()=" + isHalal()
-        + "]";
+    return super.toString() + "\nExpiry: " + expiry + "\nHalal?: " + isHalal + "\nStorage: " + storageInstructions;
   }
-
-  
 }

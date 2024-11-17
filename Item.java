@@ -52,13 +52,7 @@ public abstract class Item {
 
   @Override
   public String toString() {
-    return "Item [name=" + name + ", brand=" + brand + ", origin=" + origin + ", price=" + price + "]";
+    return "Name: " + name + "\nBrand: " + brand + "\nOrigin:" + origin + "\nPrice: " + price; 
   }
 }
 
-/*
-checklist
- - Item*
- - Perishable*
- - Food* 
- */

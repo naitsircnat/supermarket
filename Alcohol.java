@@ -24,6 +24,6 @@ public class Alcohol extends Drink implements CheckAge {
   }
 
   public String toString() {
-    return "Name: " + name + "\nBrand: " + brand + "\nOrigin:" + origin + "\nPrice($): " + price + "\nExpiry: " + expiry + "\nHalal?: " + isHalal + "\nStorage: " + storageInstructions + "\nVolume(ml): " + vol + "\nAlcohol %: " + alcoholPercent; 
+    return super.toString() + "\nAlcohol %: " + alcoholPercent; 
   }
 }
