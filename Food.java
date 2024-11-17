@@ -6,7 +6,7 @@ public class Food extends Perishable {
     this.weight=0;
   }
   
-  public Food(String name, String brand, String origin, double price, String expiry, boolean isHalal, String storageInstructions, int weight){
+  public Food(String name, String brand, String origin, double price, String expiry, String isHalal, String storageInstructions, int weight){
     super(name, brand, origin, price, expiry, isHalal, storageInstructions);
     this.weight=weight;
   }

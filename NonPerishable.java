@@ -25,6 +25,6 @@ public class NonPerishable extends Item {
   @Override
   public String toString() {
     return "Homeware [name=" + name + ", dimensions=" + dimensions + ", brand=" + brand + ", origin=" + origin
-        + ", price=" + price + ", toString()=" + super.toString() + "]";
+        + ", price=" + price + "]";
   }
 }

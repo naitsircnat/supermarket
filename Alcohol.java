@@ -6,7 +6,7 @@ public class Alcohol extends Drink implements CheckAge {
     this.alcoholPercent=0;
   }
   
-  public Alcohol(String name, String brand, String origin, double price, String expiry, boolean isHalal, String storageInstructions, int vol, double alcoholPercent){
+  public Alcohol(String name, String brand, String origin, double price, String expiry, String isHalal, String storageInstructions, int vol, double alcoholPercent){
     super(name, brand, origin, price, expiry, isHalal, storageInstructions, vol);
     this.alcoholPercent=alcoholPercent;
   }
